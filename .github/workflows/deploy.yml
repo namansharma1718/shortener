@@ -20,5 +20,12 @@ jobs:
 
           script: |
             cd ~/shortener
+
+            echo "Pulling latest code..."
             git pull origin main
+
+            echo "Rebuilding containers..."
+            docker compose pull
             docker compose up --build -d
+
+            echo "Deployment complete!"
