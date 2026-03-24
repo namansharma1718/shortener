@@ -1,0 +1,5 @@
+Django==5.0.4
+djangorestframework==3.17.0
+django-redis==5.4.0
+redis==5.0.1
+gunicorn==21.2.0
